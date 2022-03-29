@@ -6,7 +6,7 @@ export default ({ req }) => {
 
     return axios.create({
       baseURL:
-        'http://test.jonassnielsen.dk/',
+        'http://www.tobedefined.com/',
       headers: req.headers,
     });
   } else {
