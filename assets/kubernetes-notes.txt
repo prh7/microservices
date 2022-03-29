@@ -1,0 +1,37 @@
+* Terminologies
+
+- Kubernetes cluster
+- Node 
+- Pod // Contains docker container(s)
+- Deployment // Manages a pod or a set of pods
+- Service
+
+* Types of Service
+------------------
+
+- Node Port // Only for development purposes
+- Load Balancer // Recommended way to expose service to outside world
+- Cluster IP // For communication between pods
+- External Name
+
+* Commands
+
+- kubectl version // Tells Kubernetes version
+- kubectl apply -f <config_filename> // Creates an object 
+- kubectl get pods // Shows all running pods
+- kubectl exec -it <pod_name> sh // Run shell inside pod
+- kubectl logs <pod_name> // Logs from the pod
+- kubectl delete pod <pod_name> // Deletes a pod
+- kubectl describe pod <pod_name> // Describe about the pod itself
+- kubectl get deployments/services // Shows all deployments or services in a cluster
+- kubectl describe deployment/service <deployment/service_name> // Describes about a deployment or a service itself
+- kubectl delete deployment/service <deployment/service_name> // Delete a deployment or service
+- kubectl rollout restart deployment <deployment_name> // Restarts exists deployment
+- kubectl apply -f . // Applies all config file in the current working directory
+- kubectl port-forward <pod_name> <port_number>:<port_number> // Port-forwarding
+- kubectl create secret generic <generic_key_name> --from-literal=<key>=<value> // to create secrets Ref: V177
+- kubectl get secrets
+- kubectl config view
+- kubectl config use-context <context_name> // f.ex. docker-desktop or digital ocean k8 cluster name
+-------------------------------------------------
+References -> https://classroom.udacity.com/courses/ud615

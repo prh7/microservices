@@ -1,8 +1,2 @@
 node_modules
 .DS_Store
-
-docker-notes.txt
-kubernetes-notes.txt
-mongodb.txt
-nats-streaming.txt
-notes.txt

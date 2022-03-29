@@ -1,0 +1,4 @@
+- Optmistic concurrency control(OCC). It is generally for all types of databases. Refer to V387
+- Implementing OOC without 'mongoose-update-if-current' plugin. Refer to V399
+-
+

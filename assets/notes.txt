@@ -1,0 +1,15 @@
+Microservices
+-------------
+
+1. https://dev.to/musolemasu/series/15934  
+
+2. Fix if ingress-nginx-controller isn't found -> https://stackoverflow.com/questions/61365202/nginx-ingress-service-ingress-nginx-controller-admission-not-found 
+
+Digital Ocean
+-------------
+- doctl auth init
+- doctl doctl kubernetes cluster kubeconfig save <cluster_name/id>
+
+Git
+---
+- https://www.youtube.com/watch?v=BEE66nNi-3c

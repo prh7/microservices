@@ -1,0 +1,8 @@
+Terminology
+-----------
+
+* Client
+* Channel
+* Queue Group
+* Publisher
+* Listener

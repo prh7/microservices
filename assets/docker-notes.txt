@@ -1,0 +1,30 @@
+* Terminologies:
+----------------
+
+- Dockerfile
+- Docker cli
+- Docker client
+- Docker server
+- Docker hub
+- Docker image
+- Docker container
+
+* Commands:
+-----------
+
+- docker run <image_name> <startup_command> // Creates and starts a docker container
+- docker ps // Lists running docker containers
+- docker ps --all // Lists all created and running containers
+- docker create <image_name> // Creates a docker container
+- docker start -a <container_id> // Starts a docker container and logs output from the container
+- docker system prune // Removes all docker containers from Docker hub
+- docker logs <container_id> // Logs output froma docker container
+- docker stop <container_id> // Stops a docker container(recommended)
+- docker kill <container_id> // Kills a docker container forever. Use only if docker stop doesn't work
+- docker exec -it (-i -t) <container_id> // Runs a new program along with the running program on the same docker container allowing user to input to the container, adding shell into the container
+- docker exec -it (-i -t) <container_id> sh // Runs a new program along with the running program on the same docker container allowing user to input to the container, adding shell into the container
+- docker build . // Build a usable docker image using Dockerfile
+- docker build -t <your_docker_id>/<image_name>:<tag_name> . // Tags a docker image with proper image_name
+- docker commit -c '<command>' <running_docker_container_id> // Manual creates docker image from a running container based by its id
+- docker run -p <port_number>:<port:number> <image> // docker run with port forwarding
+- docker push <image_name> // Push docker image to docker hub
