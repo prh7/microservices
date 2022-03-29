@@ -6,7 +6,9 @@ import { natsWrapper } from './natsWrapper';
 import { OrderCreatedListener } from './routes/events/listeners/orderCreatedListener';
 import { OrderCancelledListener } from './routes/events/listeners/orderCancelledListener';
 
-const start = async () => {  
+const start = async () => {
+  console.log('Server is starting to run...');
+  
   if (!process.env.NATS_CLIENT_ID) {
     throw new Error('NATS_CLIENT_ID must be defined');
   }
